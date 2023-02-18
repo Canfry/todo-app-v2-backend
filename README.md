@@ -1,7 +1,7 @@
 ## Introduction
 
 Create a new version of a Todo App. The goal is to show the CRUD and the fullstack skills.
-How to make a classic and something borring Todo App into a modern and attractive one ?
+How to make a classic and sometimes borring Todo App, into a modern and attractive one ?
 
 ### Table of content
 
@@ -40,34 +40,42 @@ How to make a classic and something borring Todo App into a modern and attractiv
 - Structure
   - Create 2 folders in root project (frontend & backend)
 - Scripts and dependencies
+
   - Backend
+
     - First install globally nestjs CLI `yarn global add @nestjs/cli`
     - Then create a new project in your backend folder: `nest new [project name]`
-- Running the app:
+    - Install Prisma as dev dependency: `yarn add prisma -D`
+    - Invoke Prisma CLI: `npx prisma`
+    - Initialize Prisma project: `npx prisma init`
+    - Define your schema and push your schema to DB: `npx prisma db push`
+    - Install Prisma Client: `yarn add @prisma/client`
+    - After every changes you can use `npx prisma generate` to accommodate the changes in your Prisma Client API.
+    - Running the app:
 
-```bash
+    ```bash
 
-# development
-$ yarn run start
+    # development
+    $ yarn run start
 
-# watch mode
-$ yarn run start:dev
+    # watch mode
+    $ yarn run start:dev
 
-# production mode
-$ yarn run start:prod
+    # production mode
+    $ yarn run start:prod
 
-```
+    ```
 
-- Test:
+    - Test:
 
-```bash
+    ```bash
 
-# unit tests
-$ yarn run test
+    # unit tests
+    $ yarn run test
 
-# e2e tests
-$ yarn run test:e2e
+    # e2e tests
+    $ yarn run test:e2e
 
-# test coverage
-$ yarn run test:cov
-```
+    # test coverage
+    $ yarn run test:cov
+    ```
