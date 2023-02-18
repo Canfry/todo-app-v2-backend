@@ -1,40 +1,52 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+## Introduction
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Create a new version of a Todo App. The goal is to show the CRUD and the fullstack skills.
+How to make a classic and something borring Todo App into a modern and attractive one ?
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+### Table of content
 
-## Description
+- [What I use](#what-i-use)
+  - Backend
+    - PlanetScale as a database #planetscale
+    - Prisma as an ORM #prisma
+    - NestJS as a server side application #nestjs
+    - Host #render
+  - Frontend
+    - React with Vite #vite #reactjs
+    - Framer-motion to give some animation #framer-motion
+    - Tailwindcss for styling #tailwindcss
+    - Host #vercel
+    - React-Query #react-query
+- [Set up the project](#set-up-the-project)
+  - Structure
+  - Scripts and dependencies
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+### What I use
 
-## Installation
+- Backend
+  - [Planetscale](https://www.planetscale.com) a serverless MySQL platform, that let you set up a database very easely using MySQL. It's also very friendly used to combine with Prisma.
+  - [Prisma](https://www.prisma.io) an open-source ORM (Object Relational Mapping)
+  - [Nestjs](https://www.nestjs.com) a progressive Node.js framework for building efficient, reliable and scalable server-side applications. The documentation is amazing so you can setup everything that you want easily (auth with passport, jwt, protected routes...).
+  - [Render.com](https://www.render.com) is a very nice solution to host web server
+- Frontend
+
+  - [Vite](https://www.vitejs.dev) Next generation frontend tooling. Incredibly fast to bundle your favorite frameworks or a vanilla javascript project.
+  - [Framer-motion](htpps://www.framer.com/motion) A fantastic library to easily animate your react jsx elements or components.
+  - [Tailwindcss](https://www.tailwindcss.com) The very famous CSS framework that makes you style your project quickly.
+  - [Vercel](https://www.vercel.com) A wonderful plateform to deploy quickly your frontend apps.
+  - [React-query](https://react-query-v3.tanstack.com/) To manage your data fectching in react projects.
+
+- ### Set up the project
+- Structure
+  - Create 2 folders in root project (frontend & backend)
+- Scripts and dependencies
+  - Backend
+    - First install globally nestjs CLI `yarn global add @nestjs/cli`
+    - Then create a new project in your backend folder: `nest new [project name]`
+- Running the app:
 
 ```bash
-$ yarn install
-```
 
-## Running the app
-
-```bash
 # development
 $ yarn run start
 
@@ -43,11 +55,13 @@ $ yarn run start:dev
 
 # production mode
 $ yarn run start:prod
+
 ```
 
-## Test
+- Test:
 
 ```bash
+
 # unit tests
 $ yarn run test
 
@@ -57,17 +71,3 @@ $ yarn run test:e2e
 # test coverage
 $ yarn run test:cov
 ```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
