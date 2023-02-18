@@ -7,16 +7,16 @@ How to make a classic and something borring Todo App into a modern and attractiv
 
 - [What I use](#what-i-use)
   - Backend
-    - PlanetScale as a database #planetscale
-    - Prisma as an ORM #prisma
-    - NestJS as a server side application #nestjs
-    - Host #render
+    - PlanetScale as a database
+    - Prisma as an ORM
+    - NestJS as a server side application
+    - Host
   - Frontend
-    - React with Vite #vite #reactjs
-    - Framer-motion to give some animation #framer-motion
-    - Tailwindcss for styling #tailwindcss
-    - Host #vercel
-    - React-Query #react-query
+    - React with Vite #vite
+    - Framer-motion to give some animation
+    - Tailwindcss for styling
+    - Host
+    - React-Query
 - [Set up the project](#set-up-the-project)
   - Structure
   - Scripts and dependencies
