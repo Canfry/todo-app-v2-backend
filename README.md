@@ -10,12 +10,12 @@ How to make a classic and something borring Todo App into a modern and attractiv
     - PlanetScale as a database
     - Prisma as an ORM
     - NestJS as a server side application
-    - Host
+    - Render as host
   - Frontend
     - React with Vite #vite
     - Framer-motion to give some animation
     - Tailwindcss for styling
-    - Host
+    - Vercel as host
     - React-Query
 - [Set up the project](#set-up-the-project)
   - Structure
