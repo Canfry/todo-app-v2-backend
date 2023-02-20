@@ -6,7 +6,7 @@ import { JwtGuard } from 'src/auth/guards';
 @UseGuards(JwtGuard)
 @Controller('users')
 export class UserController {
-  @Get('/profile')
+  @Get('profile')
   getProfile(@GetUser() user: User) {
     return user;
   }
