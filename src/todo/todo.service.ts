@@ -35,13 +35,13 @@ export class TodoService {
   }
 
   async update(userId: string, todoId: string, dto: UpdateTodoDto) {
-    // Get bookmark by Id
+    // Get todo by Id
     const todo = await this.prisma.todo.findUnique({
       where: {
         id: todoId,
       },
     });
-    // Check if user owns bookmark
+    // Check if user owns todo
     if (!todo || todo.userId !== userId)
       throw new ForbiddenException('Access to resources denied');
     // Update Todo
@@ -61,7 +61,7 @@ export class TodoService {
         id: todoId,
       },
     });
-    // Check if user owns bookmark
+    // Check if user owns todo
     if (!todo || todo.userId !== userId)
       throw new ForbiddenException('Access to resources denied');
     // Update Todo
