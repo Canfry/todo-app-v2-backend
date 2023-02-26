@@ -16,7 +16,7 @@ How to make a classic and sometimes borring Todo App, into a modern and attracti
     - Framer-motion to give some animation
     - Tailwindcss for styling
     - Vercel as host
-    - React-Query
+    - TanStack Query
     - Axios
 - [Set up the project](#set-up-the-project)
   - Structure
@@ -35,7 +35,7 @@ How to make a classic and sometimes borring Todo App, into a modern and attracti
   - [Framer-motion](htpps://www.framer.com/motion) A fantastic library to easily animate your react jsx elements or components.
   - [Tailwindcss](https://www.tailwindcss.com) The very famous CSS framework that makes you style your project quickly.
   - [Vercel](https://www.vercel.com) A wonderful plateform to deploy quickly your frontend apps.
-  - [React-query](https://react-query-v3.tanstack.com/) To manage your data fectching in react projects.
+  - [TanStack Query](https://tanstack.com/query/latest) To manage your data fectching in react projects.
   - [Axios](https://axios-http.com/) To fetch endpoints.
 
 - ### Set up the project
@@ -87,7 +87,7 @@ How to make a classic and sometimes borring Todo App, into a modern and attracti
     - Create React App using Vite: `yarn create vite`
     - For this project we are using Typescript
     - Intall the needed dependencies:
-    - yarn add react-query axios framer-motion
+    - yarn add @tanstack/react-query axios framer-motion
     - Tailwindcss: follow [this instructions](https://tailwindcss.com/docs/guides/vite)
     - Running the app:
 
