@@ -17,6 +17,7 @@ How to make a classic and sometimes borring Todo App, into a modern and attracti
     - Tailwindcss for styling
     - Vercel as host
     - React-Query
+    - Axios
 - [Set up the project](#set-up-the-project)
   - Structure
   - Scripts and dependencies
@@ -35,6 +36,7 @@ How to make a classic and sometimes borring Todo App, into a modern and attracti
   - [Tailwindcss](https://www.tailwindcss.com) The very famous CSS framework that makes you style your project quickly.
   - [Vercel](https://www.vercel.com) A wonderful plateform to deploy quickly your frontend apps.
   - [React-query](https://react-query-v3.tanstack.com/) To manage your data fectching in react projects.
+  - [Axios](https://axios-http.com/) To fetch endpoints.
 
 - ### Set up the project
 - Structure
@@ -78,4 +80,24 @@ How to make a classic and sometimes borring Todo App, into a modern and attracti
 
     # test coverage
     $ yarn run test:cov
+    ```
+
+  - Frontend
+
+    - Create React App using Vite: `yarn create vite`
+    - For this project we are using Typescript
+    - Intall the needed dependencies:
+    - yarn add react-query axios framer-motion
+    - Tailwindcss: follow [this instructions](https://tailwindcss.com/docs/guides/vite)
+    - Running the app:
+
+    ```
+    #Development
+    $ yarn dev
+
+    #Build
+    $ yarn build
+
+    #Preview
+    $ yarn preview
     ```
