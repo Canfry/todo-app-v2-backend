@@ -6,10 +6,10 @@ import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
+    ConfigModule.forRoot({ isGlobal: true }),
     UserModule,
     AuthModule,
     PrismaModule,
-    ConfigModule.forRoot({ isGlobal: true }),
   ],
 })
 export class AppModule {}
