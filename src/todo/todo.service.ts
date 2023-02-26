@@ -64,7 +64,7 @@ export class TodoService {
     // Check if user owns todo
     if (!todo || todo.userId !== userId)
       throw new ForbiddenException('Access to resources denied');
-    // Update Todo
+    // Delete Todo
     return this.prisma.todo.delete({
       where: {
         id: todoId,
