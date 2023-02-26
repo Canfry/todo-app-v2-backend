@@ -1,26 +1,74 @@
-import { Injectable } from '@nestjs/common';
+import { ForbiddenException, Injectable } from '@nestjs/common';
 import { CreateTodoDto } from './dto/create-todo.dto';
 import { UpdateTodoDto } from './dto/update-todo.dto';
+import { PrismaService } from '../prisma/prisma.service';
 
 @Injectable()
 export class TodoService {
-  create(createTodoDto: CreateTodoDto) {
-    return 'This action adds a new todo';
+  constructor(private prisma: PrismaService) {}
+  async create(dto: CreateTodoDto, userId: string) {
+    const todo = await this.prisma.todo.create({
+      data: {
+        userId,
+        ...dto,
+      },
+    });
+
+    return todo;
   }
 
-  findAll() {
-    return `This action returns all todo`;
+  findAll(userId: string) {
+    return this.prisma.todo.findMany({
+      where: {
+        userId,
+      },
+    });
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} todo`;
+  findOne(userId: string, todoId: string) {
+    return this.prisma.todo.findFirst({
+      where: {
+        id: todoId,
+        userId,
+      },
+    });
   }
 
-  update(id: number, updateTodoDto: UpdateTodoDto) {
-    return `This action updates a #${id} todo`;
+  async update(userId: string, todoId: string, dto: UpdateTodoDto) {
+    // Get bookmark by Id
+    const todo = await this.prisma.todo.findUnique({
+      where: {
+        id: todoId,
+      },
+    });
+    // Check if user owns bookmark
+    if (!todo || todo.userId !== userId)
+      throw new ForbiddenException('Access to resources denied');
+    // Update Todo
+    return this.prisma.todo.update({
+      where: {
+        id: todoId,
+      },
+      data: {
+        ...dto,
+      },
+    });
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} todo`;
+  async remove(userId: string, todoId: string) {
+    const todo = await this.prisma.todo.findUnique({
+      where: {
+        id: todoId,
+      },
+    });
+    // Check if user owns bookmark
+    if (!todo || todo.userId !== userId)
+      throw new ForbiddenException('Access to resources denied');
+    // Update Todo
+    return this.prisma.todo.delete({
+      where: {
+        id: todoId,
+      },
+    });
   }
 }

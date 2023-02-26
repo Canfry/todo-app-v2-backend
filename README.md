@@ -12,7 +12,7 @@ How to make a classic and sometimes borring Todo App, into a modern and attracti
     - NestJS as a server side application
     - Render as host
   - Frontend
-    - React with Vite #vite
+    - React with Vite
     - Framer-motion to give some animation
     - Tailwindcss for styling
     - Vercel as host
