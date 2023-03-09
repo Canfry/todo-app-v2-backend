@@ -6,7 +6,7 @@ import { PrismaService } from '../prisma/prisma.service';
 @Injectable()
 export class TodoService {
   constructor(private prisma: PrismaService) {}
-  async create(dto: CreateTodoDto, userId: string) {
+  async create(userId: string, dto: CreateTodoDto) {
     const todo = await this.prisma.todo.create({
       data: {
         userId,

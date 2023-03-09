@@ -22,7 +22,7 @@ export class TodoController {
 
   @Post('new')
   create(@GetUser('id') userId: string, @Body() createTodoDto: CreateTodoDto) {
-    return this.todoService.create(createTodoDto, userId);
+    return this.todoService.create(userId, createTodoDto);
   }
 
   @Get()
