@@ -10,13 +10,12 @@ How to make a classic and sometimes borring Todo App, into a modern and attracti
     - PlanetScale as a database
     - Prisma as an ORM
     - NestJS as a server side application
-    - Render as host
+    - Railway as host
   - Frontend
     - React with Vite
     - Framer-motion to give some animation
     - Tailwindcss for styling
     - Vercel as host
-    - TanStack Query
     - Axios
 - [Set up the project](#set-up-the-project)
   - Structure
@@ -28,14 +27,13 @@ How to make a classic and sometimes borring Todo App, into a modern and attracti
   - [Planetscale](https://www.planetscale.com) a serverless MySQL platform, that let you set up a database very easely using MySQL. It's also very friendly used to combine with Prisma.
   - [Prisma](https://www.prisma.io) an open-source ORM (Object Relational Mapping)
   - [Nestjs](https://www.nestjs.com) a progressive Node.js framework for building efficient, reliable and scalable server-side applications. The documentation is amazing so you can setup everything that you want easily (auth with passport, jwt, protected routes...).
-  - [Render.com](https://www.render.com) is a very nice solution to host web server
+  - [Railway](https://railway.app) is a very nice solution to host web server
 - Frontend
 
   - [Vite](https://www.vitejs.dev) Next generation frontend tooling. Incredibly fast to bundle your favorite frameworks or a vanilla javascript project.
   - [Framer-motion](htpps://www.framer.com/motion) A fantastic library to easily animate your react jsx elements or components.
   - [Tailwindcss](https://www.tailwindcss.com) The very famous CSS framework that makes you style your project quickly.
   - [Vercel](https://www.vercel.com) A wonderful plateform to deploy quickly your frontend apps.
-  - [TanStack Query](https://tanstack.com/query/latest) To manage your data fectching in react projects.
   - [Axios](https://axios-http.com/) To fetch endpoints.
 
 - ### Set up the project
