@@ -7,6 +7,7 @@ async function bootstrap() {
     origin: 'https://www.todo-app-v2-frontend.vercel.app',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     preflightContinue: false,
+    allowedHeaders: ['Content-Type', 'Authorization'],
   });
   await app.listen(5500);
 }
