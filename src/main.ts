@@ -4,7 +4,7 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors({
-    origin: 'https://todo-app-v2-frontend-2f4hnq48b-canfry.vercel.app',
+    origin: 'https://todo-app-v2-frontend.vercel.app/',
   });
   await app.listen(5500);
 }
